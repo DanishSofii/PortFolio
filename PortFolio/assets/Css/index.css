@@ -2,13 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-
+/* body {
+    display: none;
+} */
 li {
     list-style :none;
 }
 html {
     scroll-behavior: smooth;
+}
+:root{
+    --primary--color:#000;
+    --secondary--color:blue;
+    --third--color:orange;
+}
+
+.dark-mode{
+    --primary--color:#fff;
+    --secondary--color:rgb(71, 78, 104)e;
+    --third--color:orange;
+
 }
 .navbar { 
     display: flex;
@@ -16,7 +31,7 @@ html {
     flex-wrap: wrap;
     align-items: center;
     background-color: #ffffff;
-    padding: 0.9rem 3rem;
+    padding: 0.9rem 2rem;
     border-bottom: 1px solid rgb(219, 217, 217);
     box-shadow: 0px 0px 6px 0.3px;
     
@@ -26,7 +41,7 @@ html {
     position:sticky;
     top:0px;
 }
-.navbar ul{
+.navbar  ul{
 
     display: flex;
     justify-content: flex-end;
@@ -72,6 +87,27 @@ html {
     font-size: 0.9rem;
     font-weight: 550;
     cursor: pointer;
+}
+.nav-items-small {
+    background-color: rgb(235, 233, 233);
+    visibility: hidden;
+    position:sticky;
+    top:35px;
+}
+.nav-items-small ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5rem 1rem 0.5rem 1rem;
+}
+.nav-items-small li,a {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+
+
 }
 
 .about {
@@ -152,10 +188,11 @@ html {
     height: 300px;
     width: 300px;
     border-radius:70% 30% 47% 53% / 33% 36% 64% 67%  ;
-    border:2px solid blue;
-    box-shadow: 0 0px 12px 2px rgb(78, 78, 249);
+    /* border:2px solid blue; */
+    box-shadow: 0 0px 12px 2px orange;
     cursor: pointer;
     transition: border-radius 300ms ease-in-out;
+    background-color: orange;
 }
 
 #pro-pic:hover {
@@ -167,13 +204,15 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding:5rem;
-    height:60vh;
+    padding:10rem;
+    height:100%;
+    padding-top: 5rem;
     
     /* border-bottom:1px solid rgb(220, 217, 217); */
 }
 .skills-list-heading {
     font-family: 'Roboto', sans-serif;
+    margin-top:3rem;
     border-bottom: 5px solid blue;
     
 }
@@ -181,24 +220,73 @@ html {
 .skills ul {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
 }
 .skills ul li {
     font-size: 5rem;
-    padding: 2rem;
-    cursor: pointer;
-    transition:0.3s;
+        padding: 2rem;
+        cursor: pointer;
+        transition:0.3s;
+    width:10rem;
 }
 .skills ul li:hover {
     color: blue;
 }
+.progresscontainer {
+    width: 500px;
+    height: 10px;
+    background-color: #3d3c3c;
+    border-radius: 10px;
+}
+.progressbar{
+    height:10px;
+    background-color: #0040ff;
+    border-radius: 10px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+}
+#htmlpb {
+    width:50%;
+}
+#csspb {
+    width:50%;
+}
+#jspb {
+    width:30%;
+}
+#javapb {
+    width:30%;
+}
+#cpb {
+    width:60%;
+}
+#pythonpb {
+    width:40%;
+}
+#jquerypb {
+    width:60%;
+}
+
+#nodejspb {
+    width:40%;
+}
+
+
+
 
 #about-container {
     display: flex;
     flex-direction: column;
-    padding:9rem 15rem 6rem 16rem;
-    /* border-bottom:1px solid rgb(220, 217, 217); */
+    padding:5rem 7rem ;
     background-color: #eeeded;
+    height: 55vh;
+    padding-top:2rem;
+
 }
 
 #about-container h1 {
@@ -208,8 +296,6 @@ html {
 #about-container p{
     font-family: 'Roboto', sans-serif;
     font-size: larger;
-
-
 }
 
 #project-container {
@@ -217,15 +303,18 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding:9rem 15rem 6rem 16rem;
-    /* border-bottom:1px solid rgb(220, 217, 217); */
+    padding:10rem 10rem 10rem 10rem;
+
     background-color: #eeeded;
+    width: 100%;
 
 }
 
 .project-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     
 
     
@@ -267,7 +356,11 @@ html {
     width:20rem;
     box-shadow: 1px 1px 8px 2px #000000;
     cursor: pointer;
+    transition: all 0.1s;
 
+}
+.project:hover {
+    transform: translateY(-10px);
 }
 
 .project-title {
@@ -323,6 +416,7 @@ html {
     height: 80vh;
     width:70%;
     padding:4rem;
+    
 }
 fieldset {
     margin:1.2rem;
@@ -380,6 +474,35 @@ textarea:focus {
     color:#fff;
 }
 
+#theme {
+    background: none;
+    border: none;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+input{
+    background: none;
+}
+.fa-bars {
+    visibility: hidden;
+}
+.menu {
+    display: flex;
+}
+#backtop {
+    font-size: 2rem;
+    position: fixed;
+    top: 650px;
+    right:20px;
+    color:rgb(16, 4, 110);
+    cursor: pointer;
+
+}
+
+
+#backtop:hover {
+    color:#ffa72b;
+}
 @media screen and (max-width: 800px) {
     .about {
         padding:2.5rem;
@@ -773,3 +896,56 @@ textarea:focus {
     top:600px;
    }
 }
+
+
+
+
+/* loader --------------------------- */
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3d3c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite
+  }
+  .loader::before , .loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    animation: prixClipFix 2s linear infinite ;
+  }
+  .loader::after{
+    border-color: #FF3D00;
+    animation: prixClipFix 2s linear infinite , rotate 0.5s linear infinite reverse;
+    inset: 6px;
+  }
+
+  @keyframes rotate {
+    0%   {transform: rotate(0deg)}
+    100%   {transform: rotate(360deg)}
+  }
+
+  @keyframes prixClipFix {
+      0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+      25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+      50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+      75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+      100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+  }
