@@ -19,17 +19,36 @@
 </head>
 
 <body>
+    <button type="submit" onclick="topFunction()" id="backtopbtn"><i id="backtop" class="fa-solid fa-square-caret-up"></i></button>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
     <div class="header">
         <div class="navbar">
-            <div class="name">Danish</div>
-            <ul>
-                <li><a href="#profile-container">Home</a></li>
-                <li><a href="#about-container">About</a></li>
-                <li><a href="#skill-container">Skills</a></li>
-                <li><a href="#project-container">Projects</a></li>
-                <li><a href="#contact-container ">Contact</a></li>
-            </ul>
+            <div class="name">Danish
+                <button id="theme"><i class="fa-regular fa-sun"></i></button>
+            </div>
+
+            <div class="nav-item">
+                <ul>
+                    <li><a class="nav-link" href="#profile-container">Home</a></li>
+                    <li><a class="nav-link" href="#about-container">About</a></li>
+                    <li><a class="nav-link" href="#skill-container">Skills</a></li>
+                    <li><a class="nav-link" href="#project-container">Projects</a></li>
+                    <li><a class="nav-link" href="#contact-container ">Contact</a></li>
+                </ul>
+            </div>
+
         </div>
+    </div>
+    <div class="nav-items-small">
+        <ul>
+            <li><a class="nav-link" href="#profile-container">Home</a></li>
+            <li><a class="nav-link" href="#about-container">About</a></li>
+            <li><a class="nav-link" href="#skill-container">Skills</a></li>
+            <li><a class="nav-link" href="#project-container">Projects</a></li>
+            <li><a class="nav-link" href="#contact-container ">Contact</a></li>
+        </ul>
     </div>
 
 
@@ -45,40 +64,88 @@
             </div>
             <div class="social-media">
                 <ul>
-                    <li><a href="https://in.linkedin.com/in/danish-sofi-184318234?trk=public_profile_browsemap" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/danish.bashir_/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100010177694434" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/DanishBashir_?t=pKWFeJooAqUr6efxCp0-Iw&s=08" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a href="https://github.com/DanishSofii" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+                    <li><a href="https://in.linkedin.com/in/danish-sofi-184318234?trk=public_profile_browsemap"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/danish.bashir_/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100010177694434" target="_blank"><i
+                                class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/DanishBashir_?t=pKWFeJooAqUr6efxCp0-Iw&s=08" target="_blank"><i
+                                class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://github.com/DanishSofii" target="_blank"><i
+                                class="fa-brands fa-square-github"></i></a></li>
                 </ul>
             </div>
         </div>
         <div class="profile">
-            <img id="pro-pic" src="/assets/Images/profile.jpg" alt="profile picture">
+            <img id="pro-pic" src="/assets/Images/profile.png" alt="profile picture">
         </div>
     </div>
 
     <div id="about-container">
         <h1 class="heading-text">About Me</h1>
-        <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta necessitatibus consectetur
-            et, reiciendis tempora vero iusto suscipit nulla unde error harum veritatis provident nemo sequi? Ex quis
-            ipsam ipsum consequuntur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe consequatur modi
-            ratione laboriosam tempora. Labore tempora consequatur velit vitae, dolore laboriosam blanditiis deserunt
-            placeat animi exercitationem eveniet fuga illum quisquam!</p>
+        <p class="about-me">Hey Guys!
+            My name is Danish Sofi and I am currently a student at M.S. Ramaiah Institute Of Technology.
+            I am from Kashmir, sopore. I did my schooling till 12th in S.R.M. Welkin Higher Secondary School.
+            I passed my 12th exams with 99.2% . I am currently learning Full Stack Web Development and I aspire to
+            become a Better Web Developer in future.
+           
     </div>
 
     <div class="skills" id="skill-container">
         <div class="skills-heading">
-            <h1 class="skills-list-heading">Skills</h1>
+            <h1 class="skills-list-heading"><i class="fa-solid fa-laptop"></i> Skills</h1>
         </div>
         <ul>
-            <li><i class="fa-brands fa-html5"></i></li>
-            <li><i class="fa-brands fa-css3-alt"></i></li>
-            <li><i class="fa-brands fa-square-js"></i></li>
-            <li><i class="devicon-c-plain"></i></li>
-            <li><i class="fa-brands fa-python"></i></li>
-            <li><i class="fa-brands fa-java"></i></li>
-            <li><i class="devicon-jquery-plain"></i></li>
+            <div class="skill">
+                <li><i class="fa-brands fa-html5"></i></li>
+                <div class="progresscontainer">
+                    <div class="progressbar" id="htmlpb"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <div class="progresscontainer">
+                    <div class="progressbar" id="csspb"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <li><i class="fa-brands fa-square-js"></i></li>
+                <div class="progresscontainer">
+                    <div class="progressbar" id="jspb"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <li><i class="devicon-c-plain fa-brands"></i></li>
+                <div class="progresscontainer">
+                    <div class="progressbar" id="cpb"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <li><i class="fa-brands fa-python"></i></li>
+                <div class="progresscontainer">
+                    <div class="progressbar" id="pythonpb"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <li><i class="fa-brands fa-java"></i></li>
+                <div class="progresscontainer">
+                    <div class="progressbar" id="javapb"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <li><i class="devicon-jquery-plain fa-brands"></i></li>
+                <div class="progresscontainer">
+                    <div class="progressbar" id="jquerypb"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <li><i class="fa-brands fa-node-js"></i></li>
+                <div class="progresscontainer">
+                    <div class="progressbar" id="nodejspb"></div>
+                </div>
+            </div>
+
 
         </ul>
     </div>
@@ -88,26 +155,29 @@
             <div class="project">
                 <img id="project-img" src="./assets/Images/project4.png" alt="">
                 <h2 class="project-title">PortFolio</h2>
-                <h4 class="project-info">This is a basic portfolio which will give 
+                <h4 class="project-info">This is a basic portfolio which will give
                     you information about me like my name, skills contact info etc
                 </h4>
-                <li><a href="https://github.com/DanishSofii/PortFolio" target="_blank"><i  class="project-btn fa-brands fa-github"></i></a></li>
+                <li><a href="https://github.com/DanishSofii/PortFolio" target="_blank"><i
+                            class="project-btn fa-brands fa-github"></i></a></li>
             </div>
             <div class="project">
                 <img id="project-img" src="./assets/Images/project5.png" alt="">
                 <h2 class="project-title">To-Do List Master</h2>
-                <h4 class="project-info">Basic task manager which stores the pending tasks that are added 
-                  ,  also shows the number of unfinished tasks
+                <h4 class="project-info">Basic task manager which stores the pending tasks that are added
+                    , also shows the number of unfinished tasks
                 </h4>
-                <li><a href="https://github.com/DanishSofii/To-Do-List" target="_blank"><i  class="project-btn fa-brands fa-github"></i></a></li>
+                <li><a href="https://github.com/DanishSofii/To-Do-List" target="_blank"><i
+                            class="project-btn fa-brands fa-github"></i></a></li>
             </div>
             <div class="project">
                 <img id="project-img" src="./assets/Images/project6.png" alt="">
                 <h2 class="project-title">Calculator</h2>
                 <h4 class="project-info">Basic calculator built using HTML CSS and JavaScript
-                    and performs the mathematical operations 
+                    and performs the mathematical operations
                 </h4>
-                <li><a href="https://github.com/DanishSofii/Calculator" target="_blank"><i  class="project-btn fa-brands fa-github"></i></a></li>
+                <li><a href="https://github.com/DanishSofii/Calculator" target="_blank"><i
+                            class="project-btn fa-brands fa-github"></i></a></li>
             </div>
         </div>
     </div>
@@ -116,21 +186,25 @@
         <!-- <a name="contact"></a> -->
         <div class="container">
             <header class="page-header">
-                <i class="fas fa-address-book fa-bounce"></i> <h2>Contact</h2>
+                <i class="fas fa-address-book fa-bounce"></i>
+                <h2 class="contact-heading">Contact</h2>
             </header>
             <div class="form-container">
                 <form id="contactForm" autocomplete="off">
                     <fieldset>
                         <label for="name"><i class="fas fa-address-card"></i> Name</label>
-                        <input required minlength="3" maxlength="50" type="text" id="name" placeholder="Enter Your Name">
+                        <input required minlength="3" maxlength="50" type="text" id="name"
+                            placeholder="Enter Your Name">
                     </fieldset>
                     <fieldset>
                         <label for="name"><i class="fas fa-envelope"></i> Email</label>
-                        <input required minlength="8" maxlength="100" type="email" id="email" placeholder="Enter Your Email Address">
+                        <input required minlength="8" maxlength="100" type="email" id="email"
+                            placeholder="Enter Your Email Address">
                     </fieldset>
                     <fieldset>
                         <label for="name"><i class="fas fa-comment-dots"></i> Message</label>
-                        <textarea required minlength="4" maxlength="256" rows="3" id="message" placeholder="Enter Your Message"></textarea>
+                        <textarea required minlength="4" maxlength="256" rows="3" id="message"
+                            placeholder="Enter Your Message"></textarea>
                     </fieldset>
                     <fieldset>
                         <button id="sendBtn" class="send-btn"><i class="fas fa-paper-plane"></i> Send</button>
