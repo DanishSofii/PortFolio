@@ -379,3 +379,397 @@ textarea:focus {
     background-color: #5763f2;
     color:#fff;
 }
+
+@media screen and (max-width: 800px) {
+    .about {
+        padding:2.5rem;
+        padding-top: 8rem;
+        height:80vh;
+    }
+    .info-text h1 {
+        font-size: 2rem;
+    }
+    #pro-contact-btn{
+        padding:6px 15px;
+        
+    }
+    .social-media {
+        padding:0.7rem 0;
+        margin-top:1.6rem;
+    }
+    
+    .social-media ul li {
+        padding:8px 8px 8px 0px;
+        font-size: 1.4rem;
+
+    }
+    #pro-pic {
+        height: 220px;
+        width: 220px;
+        
+    }
+    #about-container {
+        padding:5rem 7rem ;
+        padding-top:2rem;   
+        height:100vh;
+        }
+    #about-container h1 {
+        font-size: 3rem;
+    }
+    #about-container p{
+        font-size: large;
+    }
+    .skills {
+        padding:4rem;
+        height:100%;
+    }
+    .skills-list-heading {
+    margin-top:2.5rem;
+    font-size: 2rem;
+    }
+    .skills ul li {
+        font-size: 4rem;
+        padding: 1.7rem;
+        width:6rem;
+        
+    }
+    #project-container {
+        padding:8rem 8rem 8rem 8rem;
+    
+    }
+    #project-img {
+        height:185px;
+        width:280px;
+
+    }
+    .heading-text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+    }
+    .project-title {
+        font-size: 2rem;
+        margin-top: 10px;;
+        margin-bottom: 10px;
+    
+    }
+    .project-info {
+        font-size: 1rem;
+    }
+    .page-header *{
+        font-size: 1.5rem;
+        margin-left:1rem;
+        margin-bottom:16px;
+    }
+    #sendBtn {
+
+        height:2rem;
+        width:5rem;
+
+    }
+
+}
+
+
+@media screen and (max-width: 590px) {
+    .about {
+        padding:2rem;
+        padding-top: 4rem;
+        height:60vh;
+    }
+    .info-text h1 {
+        font-size: 1.4rem;
+    }
+    #pro-contact-btn{
+        padding:4px 11px;
+        
+    }
+    .social-media {
+        padding:0.4rem 0;
+        margin-top:1.2rem;
+    }
+    
+    /* .social-media ul li {
+        padding:5px 5px 5px 0px;
+        font-size: 1rem;
+
+    } */
+    .social-media ul li a i{
+        font-size: 1.5rem;
+        padding:0;
+
+    }
+    #pro-pic {
+        height: 180px;
+        width: 180px;
+        
+    }
+    #about-container {
+        padding:2rem 4rem ;
+        padding-top:2rem;
+        height: 100%;
+
+
+    }
+    #about-container h1 {
+        font-size: 2.5rem;
+    }
+    #about-container p{
+        font-size: medium;
+    }
+    .skills {
+        padding:3.5rem;
+        height:100%;
+    }
+    .skills-list-heading {
+    margin-top:2.5rem;
+    font-size: 1.8rem;
+    }
+    .skills ul li {
+        font-size: 3rem;
+        padding: 1.4rem;
+        width: 4rem;
+        
+    }
+    .progresscontainer{
+        width:300px;
+    }
+    #project-container {
+        padding:6rem 6rem 6rem 6rem;
+    
+    }
+    #project-img {
+        height:175px;
+        width:270px;
+
+    }
+    .heading-text {
+        font-size: 1.6rem;
+    }
+    .project-title {
+        font-size: 1.6rem;
+        margin-top: 8px;;
+        margin-bottom: 8px;
+    
+    }
+    .project-info {
+        font-size: 0.8rem;
+    }
+    .page-header *{
+        font-size: 1.2rem;
+        margin-left:1rem;
+        margin-bottom:16px;
+    }
+    #sendBtn {
+
+        height:1.8rem;
+        width:4rem;
+        font-size: 10px;
+
+    }
+    .navbar {
+        padding:1rem;
+    }
+
+    
+
+}
+@media screen and (max-width:490px) {
+    .nav-item{
+        display: none;
+    }
+    .nav-items-small  {
+        visibility: visible;
+    }
+    .nav-items-small ul li a{
+        font-size:smaller;
+    }
+    .navbar {
+        justify-content: center ;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+   
+    .about {
+        padding:0.5rem;
+        padding-top: 3rem;
+        height:50vh;
+        
+    }
+    .info-text h1 {
+        font-size: 1.1rem;
+    }
+    #pro-contact-btn{
+        padding:4px 9px;
+        
+    }
+    .social-media {
+        padding:0.3rem 0;
+        margin-top:1rem;
+    }
+    
+    /* .social-media ul li {
+        padding:5px 5px 5px 0px;
+        font-size: 1rem;
+
+    } */
+    .social-media ul li a i{
+        font-size: 1.1rem;
+        padding:0;
+
+    }
+    #pro-pic {
+        height: 120px;
+        width: 120px;
+        
+    }
+    #about-container {
+        padding:5rem 2rem ;
+        height: 100%;
+        padding-top:2rem;
+    }
+    #about-container h1 {
+        font-size: 2.5rem;
+    }
+    #about-container p{
+        font-size: medium;
+    }
+    .skills {
+        padding:3.5rem;
+        height:100%;
+    }
+    .skills-list-heading {
+    margin-top:2.5rem;
+    font-size: 1.8rem;
+    }
+    .skills ul li {
+        font-size: 3.5rem;
+        padding: 1.4rem;
+        width: 6rem;
+        
+    }
+    .progresscontainer {
+        width: 250px;
+        height: 7px;
+    }
+    .progressbar {
+        height:7px;
+    }
+    #project-container {
+        padding:6rem 6rem 6rem 6rem;
+    
+    }
+    #project-img {
+        height:175px;
+        width:270px;
+
+    }
+    .heading-text {
+        font-size: 1.6rem;
+    }
+    .project-title {
+        font-size: 1.6rem;
+        margin-top: 8px;;
+        margin-bottom: 8px;
+    
+    }
+    .project-info {
+        font-size: 0.8rem;
+    }
+    .page-header *{
+        font-size: 1.2rem;
+        margin-left:1rem;
+        margin-bottom:16px;
+    }
+    #sendBtn {
+
+        height:1.8rem;
+        width:4rem;
+        font-size: 10px;
+
+    }
+    .nav-items-small ul li a{
+        font-size:10px;
+    }
+ 
+
+    
+
+}
+@media screen and (max-width: 390px) {
+    
+  
+    #about-container {
+        padding:3rem 3rem 3rem 3rem;
+        height:80vh;
+    }
+    #about-container h1 {
+        font-size: 2rem;
+    }
+    #about-container p{
+        font-size: medium;
+    }
+    .skills {
+        padding:2.5rem;
+        height:100%;
+    }
+    .skills-list-heading {
+    margin-top:2rem;
+    font-size: 1.1rem;
+    }
+    .skills ul li {
+        font-size: 3rem;
+        padding: 1rem;
+        
+    }
+    
+    #project-container {
+        padding:4rem 4rem 4rem 4rem;
+    
+    }
+    #project-img {
+        height:155px;
+        width:240px;
+
+    }
+    .heading-text {
+        font-size: 1.4rem;
+    }
+    .project-title {
+        font-size: 1.4rem;
+        margin-top: 8px;;
+        margin-bottom: 8px;
+    
+    }
+    .project-info {
+        font-size: 0.8rem;
+    }
+    .page-header *{
+        font-size: 1.2rem;
+        margin-left:1rem;
+        margin-bottom:16px;
+    }
+    .project {
+        padding:0.5rem;
+        margin:10px;
+        width:17rem;
+        
+    
+    }
+    
+    #sendBtn {
+
+        height:1.8rem;
+        width:4rem;
+        font-size: 10px;
+
+    }
+    .container {
+        padding:1rem;
+    }
+   #backtop {
+    top:600px;
+   }
+}
